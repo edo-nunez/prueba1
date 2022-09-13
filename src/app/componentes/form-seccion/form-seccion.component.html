@@ -1,0 +1,5 @@
+<h1>Nueva sección</h1>
+
+Nombre sección: <input (input)="cambiarNomSeccion($event)" [value]="nuevaSeccion.nomSeccion">&nbsp;{{nuevaSeccion.nomSeccion}}<br>
+Sigla sección: <input (input)="cambiarSiglaSeccion($event)" [value]="nuevaSeccion.sigla">&nbsp;{{nuevaSeccion.sigla | uppercase}}<br>
+<button (click)="registrarSeccion()"> Registrar sección </button>

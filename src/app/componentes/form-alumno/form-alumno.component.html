@@ -1,0 +1,12 @@
+<h1>Formulario alumno</h1>
+<pre></pre>
+Rut: <input (input)="cambiarRut($event)" [value]="nuevoAlumno.rut"><br>
+Nombre: <input (input)="cambiarNombre($event)" [value]="nuevoAlumno.nomAlumno"><br>
+Apellido: <input (input)="cambiarApellido($event)" [value]="nuevoAlumno.apellido"><br>
+Edad: <input (input)="cambiarEdad($event)" [value]="nuevoAlumno.edad"><br>
+Sección: <select (input)="tomarId($event)">
+  <option>Seleccione una sección: </option>
+  <option [value]="item.id" *ngFor="let item of sec">{{item.nomSeccion}}</option>
+</select>
+<pre></pre>
+<button (click)="regAlumno()">Registrar alumno</button>

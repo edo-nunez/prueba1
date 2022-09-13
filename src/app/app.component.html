@@ -1,0 +1,11 @@
+<app-form-seccion (mandarSeccion)="tomarSeccion($event)"> </app-form-seccion>
+<pre></pre>
+
+
+<app-form-alumno [sec]="seccionRegistrada" (mandarAlumno)="tomarAlumno($event)" (mandarRegistro)="tomarRegistro($event)"></app-form-alumno>
+<pre></pre>
+
+<app-lista-alumno [alumnos]="alumnoRegistrado"></app-lista-alumno>
+<pre></pre>
+<app-lista-historial [registros]="registroGuardado"></app-lista-historial>
+
